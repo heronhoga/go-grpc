@@ -1,0 +1,40 @@
+{
+    "pagination": {
+        "total": 100,
+        "per_page": 10,
+        "current_page": 1,
+        "last_page": 10
+    },
+    "data": [
+        {
+            "id": 1,
+            "name": "Nike Tees",
+            "price": 10000,
+            "stock" : 10,
+            "category": {
+                "id": 1,
+                "name": "shirt"
+            } 
+        },
+        {
+            "id": 2,
+            "name": "Nike Short",
+            "price": 10000,
+            "stock" : 5,
+            "category": {
+                "id": 2,
+                "name": "pant"
+            } 
+        },
+        {
+            "id": 3,
+            "name": "Adidas Cap",
+            "price": 500000,
+            "stock" : 15,
+            "category": {
+                "id": 3,
+                "name": "accessories"
+            } 
+        }
+    ]
+}
