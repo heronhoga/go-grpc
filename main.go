@@ -41,4 +41,11 @@ func main() {
 	}
 	//COMPACT BINARY WIRE FORMAT
 	fmt.Println(data)
+
+	testProducts := &pb.Products{}
+	if err = proto.Unmarshal(data, testProducts); err != nil {
+		log.Fatal("Unmarshall error", err)
+	}
+
+	fmt.Println(testProducts)
 }
