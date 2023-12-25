@@ -1,9 +1,29 @@
 syntax = "proto3";
 package go_grpc;
 
+option go_package = "/pb";
 message Pagination {
     uint32 total = 1;
     uint32 per_page = 2;
     uint32 current_page = 3;
     uint32 last_page = 4;
+}
+
+message Product {
+    uint64 id = 1;
+    string name = 2;
+    uint64 price = 3;
+    uint64 stock = 4;
+    Category category = 5;
+}
+
+message Category {
+    uint64 id = 1;
+    string name = 2;
+}
+
+message Products {
+    Pagination pagination = 1;
+    repeated Product data = 2;
+
 }
